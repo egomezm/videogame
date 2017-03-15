@@ -1,20 +1,24 @@
 // console.log( '2D-game-engine.js Loaded' );
 
+
 // Classes
-// var Canvas = {
-//     canvas : document.createElement("canvas"),
-//     start : function() {
-//         this.canvas.width = 480;
-//         this.canvas.height = 270;
-//         this.stage = this.canvas.getContext("2d");
-//         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-//         this.frameNo = 0;
-//         this.interval = setInterval(updateGameArea, 20);
-//         },
-//     clear : function() {
-//         this.stage.clearRect(0, 0, this.canvas.width, this.canvas.height);
-//     }
-// }
+var Canvas = function(){
+	//document.createElement("BUTTON");
+    //document.body.appendChild(btn);
+    this.name="My name";
+    // canvas : document.createElement("div")
+    // start : function() {
+    //     this.canvas.width = 480;
+    //     this.canvas.height = 270;
+    //     this.stage = this.canvas.getContext("2d");
+    //     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    //     this.frameNo = 0;
+    //     this.interval = setInterval(updateGameArea, 20);
+    //     },
+    // clear : function() {
+    //     this.stage.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    // }
+}
 
 var Game = function(){
 		this.name = "";
@@ -30,6 +34,7 @@ var Game = function(){
 		this.levels = [];
 		this.settings = {};
 		this.controls = new Controls();
+		
 		var cpu = new Player;
 		var player1 = new Player;
 		var player2 = new Player;
@@ -79,7 +84,7 @@ var Keyboard = function(){
 		};
 
 		this.getActiveButtons = function(){
-			var list = "bleh";
+			var list = "";
 				if(this.is_up_btn_Pressed){ list += " up_btn "};
 				if(this.is_down_btn_Pressed){ list += " down_btn "};
 				if(this.is_left_btn_Pressed){ list += " left_btn "};
@@ -266,8 +271,7 @@ var Sprite = function( fileName, isPattern ){
 
 // Methods / Actions
 function startGame(){
-	// Load in this order 
-	createStage();			// 1
+	createStage();			// 1. 	// Load in this order 
 	createNewGame();		// 2
 	preloadResources();		// 3
 	assignResourcesToGame();// 4
@@ -280,7 +284,7 @@ function createStage(){
 		// canvas.height = canvas.getAttribute('heigth');
 		// canvas.x = 0;
 		// canavs.y = 0;
-		console.log(canvas.x);
+		//console.log(canvas.x);
 	window.stage = canvas.getContext('2d');	//Refers to 2d stage in Canvas
 	stage.save();	//Save the canvas state if required
 }
@@ -310,7 +314,7 @@ function assignResourcesToGame(){
 function startRenderEngine(){
 	window.onload = function(){
 		// Static Elements
-
+console.log("bleh");
 
 		// START custom logic for each Video Game here
 		var net = new Sprite(fileName="images/net.png", isPattern=true);
