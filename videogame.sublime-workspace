@@ -1,0 +1,842 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"convert",
+				"convertValueToJavaType"
+			],
+			[
+				"applic",
+				"applicationStop\tfn (cfml)"
+			],
+			[
+				"set",
+				"setPackageId():void\tTrackingLog"
+			],
+			[
+				"dd",
+				"dd\tdd"
+			],
+			[
+				"serial",
+				"serializeJSON\tfn (cfml)"
+			],
+			[
+				"packag",
+				"packageId"
+			],
+			[
+				"get",
+				"getId():any\tLocation.cfc"
+			],
+			[
+				"onreque",
+				"onRequestStart\tapplication.cfc"
+			],
+			[
+				"wd",
+				"writeDump\tfn (cfml)"
+			],
+			[
+				"Date",
+				"dateTimeFormat\tfn (cfml)"
+			],
+			[
+				"boot",
+				"bootstrap-multiselect"
+			],
+			[
+				"are",
+				"areaId"
+			],
+			[
+				"write",
+				"writeDump\tfn (cfml)"
+			],
+			[
+				"Pla",
+				"PlayerModel〔variable〕"
+			],
+			[
+				"Team",
+				"Team().template"
+			],
+			[
+				"tp",
+				"tpl.templates['_template"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"_",
+				"_template"
+			],
+			[
+				"scs",
+				"scs-outlet"
+			],
+			[
+				"import",
+				"importCustomer()\tthis"
+			],
+			[
+				"tr",
+				"transaction_status_reason"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"par",
+				"parPATH_TO_FILE"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "format",
+		"selected_items":
+		[
+			[
+				"format",
+				"CFML: Format Settings - User"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 536.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/ColdFusion11/cfusion/wwwroot/videogame"
+	],
+	"file_history":
+	[
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/table.cfm",
+		"/Users/eduardo.gomez/.bash_profile",
+		"/Users/eduardo.gomez/Desktop/class-videogame/js/2d-game-engine.js",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/.env",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/Dockerfile",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/resources/database/migrations/2016_11_10_093756_create_areas_table.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/tests/specs/integration/PackagesTest.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/modules/cbmigrations/models/MigrationService.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/sessions/new.cfm",
+		"/private/etc/hosts",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/tests/Application.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Area.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/resources/assets/js/jquery.validate.custom.js",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/handlers/packages.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/packageLocations/new.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/coldbox/system/Bootstrap.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/handlers/locations.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/handlers/PackageLocations.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/config/Routes.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/modules/cbrestbasehandler/handlers/BaseHandler.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/handlers/TrackingLogs.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/modules/cborm/models/CriteriaBuilder.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/modules/cborm/models/criterion/Restrictions.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/modules/cborm/models/BaseORMService.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Location.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/TrackingLog.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/search.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/track.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/coldbox/system/web/context/RequestContext.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/Gulpfile.js",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/User.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/favicon.ico",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/index.cfm",
+		"/Users/eduardo.gomez/Library/Application Support/Sublime Text 3/Packages/User/cfml_format.sublime-settings",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/tests/specs/integration/NewSpec.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/tests/specs/integration/SearchPageSpec.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/Application.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/handlers/search.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/testbox/tests/resources/Test.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/TrackingLogs/TrackingDao.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/TrackingLogs/TrackingService.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Locations/Location.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Locations/LocationDAO.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Locations/LocationService.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/TrackingLogs/TrackingLog.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/resources/assets/sass/app.scss",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/layouts/Main.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/yarn.lock",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/scs-track.sublime-project",
+		"/Users/eduardo.gomez/Desktop/dd-tag.sublime-snippets",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Areas/Area.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Areas/AreaDAO.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/models/Areas/AreaService.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/tests/index.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/box.json",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/searc.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/packages/track.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/packages/find.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/handlers/sessions.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/modules/cbstorages/models/RequestStorage.cfc",
+		"/Applications/ColdFusion11/cfusion/wwwroot/Browns/js/test.js",
+		"/Applications/ColdFusion11/cfusion/wwwroot/Browns/js/Routes.js",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/js/Routes.js",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/_template.html",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/index.html",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/js/myscript.js",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/js/App.js",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/js/models/players.json",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/js/index.html",
+		"/Users/eduardo.gomez/Desktop/Saratoga Springs-Browns/js/models/playerModel.js",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-outlet/models/Users/UserDAO.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-outlet/scheduler.xml",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-outlet/Dockerfile",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-outlet/config/Coldbox.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-outlet/views/jobs/ldap-user-import.cfm",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-outlet/README.md",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-infor/config/CacheBox.cfc",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-infor/config/Coldbox.cfc",
+		"/Users/eduardo.gomez/remotes/scs-docker-host/scs-lucee-base/Dockerfile",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/tests/specs/integration/KanbanCardsTest.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/KanbanCards/new.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/KanbanCards/generate.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/models/Parts/PartService.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/handlers/KanbanCards.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/models/Parts/PartDAO.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/Dockerfile",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/models/Parts/Part.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/models/Barcode.cfc",
+		"/Applications/ColdFusion11/cfusion/temp/kanban_card.pdf",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/reports/bookedlabor-team.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/config/WireBox.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/coldbox/box.json",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/config/Routes.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/KanbanCards/index.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/KanbanCards/edit.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/KanbanCards/view.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/box.json",
+		"/Users/eduardo.gomez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/config/Coldbox.cfc",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/views/reports/bookedlabor-tech.cfm",
+		"/Users/eduardo.gomez/Remotes/scs-docker-host/scs-infor/models/CustomInforDAO.cfc",
+		"/Users/eduardo.gomez/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/eduardo.gomez/Documents/Sublime Prettify Preferences/scs-formatter.jsbeautifyrc",
+		"/Users/eduardo.gomez/Documents/Sublime Prettify Preferences/::scs-formatter.jsbeautifyrc",
+		"/Users/eduardo.gomez/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/Users/eduardo.gomez/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/eduardo.gomez/Documents/Sublime Projects/quality.sublime-project",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/views/audits/product-audits/_edit-product-audit-form.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/views/audits/product-audits/_audit-row-template.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/views/audits/product-audits/_issue-row-template.handlebars",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/issue.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/edit-issue.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/Application.cfc",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/box.json",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/views/layouts/partials/_flash-messages.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/views/daily-numbers/daily-numbers-form.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/daily-numbers.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/transactions-log.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/app/Log/Log.cfc",
+		"/Applications/ColdFusion11/cfusion/wwwroot/quality/views/daily-numbers/daily-numbers-view.cfm",
+		"/Users/eduardo.gomez/Documents/Sublime Projects/sc-QUALITY.sublime-project",
+		"/Users/eduardo.gomez/Remotes/sc-quality/view-qed-report.cfm",
+		"/Users/eduardo.gomez/Remotes/sc-quality/delivery-report.cfm",
+		"/Users/eduardo.gomez/Remotes/sc-quality/app/Throughput/ThroughputService.cfc",
+		"/Users/eduardo.gomez/Remotes/sc-quality/cf/overnight/overnight-qed.cfm"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/",
+			"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track",
+			"",
+			"/Users/eduardo.gomez/Documents/scs-docker-host/scs-thanks",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"track",
+			" ",
+			"                                        ",
+			".DataTable( {",
+			"class",
+			"cache",
+			"Base Handler Application Error",
+			"debug",
+			", ",
+			"areas",
+			"convertValueToJavaType",
+			" persist = \"locationId\" ",
+			"store",
+			"has-warning",
+			"has-error",
+			"'",
+			"packageLocation",
+			"location",
+			"search",
+			"store",
+			"TRG_LOCATIONS",
+			"T_LOCATIONS",
+			"SEQ_LOCATIONS",
+			"endDate",
+			"theader",
+			"\"",
+			"td",
+			"<td>#id#</td>",
+			"td",
+			"th",
+			"tr",
+			"dump",
+			"{ datasource = dsn.name }",
+			"packageId",
+			"quality_type_id",
+			"09/29/2014",
+			"areaId",
+			"searchStuff",
+			"TrackingLog",
+			"trackingLog",
+			"log",
+			"Log",
+			"log",
+			"transactionCode",
+			"redirectEvent",
+			");\n",
+			"trackingLog",
+			"TrackingLog",
+			"trackingLog",
+			"packages",
+			"createLog",
+			"packages.receive",
+			"transaction",
+			"\"",
+			"prc",
+			"TrackingsLogs",
+			"Receive",
+			"receive",
+			"\"packages\"",
+			"packages",
+			"Packages",
+			"create",
+			"SELECT NULL gemba_card_id, gemba_sub_system_id, 87 AS gemba_target_id,'Team' AS gemba_target_type, NULL AS status FROM t_gemba_sub_systems WHERE gemba_sub_system_name = '",
+			"SELECT NULL AS gemba_sub_system_id, ",
+			"'Huddles'",
+			"that",
+			"status",
+			"1 AS gemba_target_id,",
+			"1 as gemba_target_id,",
+			"1 AS gemba_target_id,",
+			"1 AS gemba_target_id",
+			"1 as gemba_target_id",
+			"1 AS gemba_target_id",
+			"\"}),\n",
+			"Movies",
+			"movies",
+			"Movies",
+			"Theater",
+			"Movie",
+			".Movie",
+			"Movie ",
+			"Movie",
+			"Theater",
+			"app",
+			"Product hierarchy ",
+			"InventoryController",
+			"; .",
+			"start=",
+			"; . vagrant up scs-",
+			"scs-docker-host'",
+			"dockerstart",
+			"docker",
+			"logout",
+			"sessions",
+			"importCustomer",
+			"user_name",
+			"cur_emp",
+			"cur_emp_tt",
+			"display_name",
+			"host_employee_id",
+			"hemp",
+			"t_host_employees",
+			"usp_import_host_employees",
+			"parList",
+			"part_number",
+			"partNumber",
+			"part_number",
+			"title",
+			"Search",
+			"invoice",
+			"Utility",
+			"h3",
+			"h2",
+			"th",
+			"po_barcodes",
+			"multiselect",
+			"muyltise",
+			"\n\t/**\n    * index  \n    */\n    function index( event, rc, prc ){\n\t\tevent.setView( \"KanbanCards/index\" );\n\t}\t",
+			"reportform",
+			"e.evt_code",
+			"setDatasource( 'INFOR' )",
+			"setDatasource",
+			"e.evt_code",
+			"evt_code",
+			"e.evt_code",
+			"CORE",
+			"core",
+			"getTemplate"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "videogame.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"labels",
+				"models/Services/LabelService.cfc"
+			],
+			[
+				"docekr",
+				"Dockerfile"
+			],
+			[
+				"migrationser",
+				"modules/cbmigrations/models/MigrationService.cfc"
+			],
+			[
+				"packagetest",
+				"tests/specs/integration/PackagesTest.cfc"
+			],
+			[
+				"response",
+				"modules/cbrestbasehandler/models/Response.cfc"
+			],
+			[
+				"restriction",
+				"modules/cborm/models/criterion/Restrictions.cfc"
+			],
+			[
+				"criteria",
+				"modules/cborm/models/CriteriaBuilder.cfc"
+			],
+			[
+				"area",
+				"models/Area.cfc"
+			],
+			[
+				"tests/app",
+				"tests/Application.cfc"
+			],
+			[
+				"",
+				"tests/specs/integration/PackagesTest.cfc"
+			],
+			[
+				"location",
+				"models/Location.cfc"
+			],
+			[
+				"tracking",
+				"models/TrackingLog.cfc"
+			],
+			[
+				"packageloca/new",
+				"views/packageLocations/new.cfm"
+			],
+			[
+				"requestcont",
+				"coldbox/system/web/context/RequestContext.cfc"
+			],
+			[
+				"roue",
+				"config/Routes.cfm"
+			],
+			[
+				"track.cfm",
+				"views/trackingLogs/track.cfm"
+			],
+			[
+				"packa",
+				"handlers/packages.cfc"
+			],
+			[
+				"searchpa",
+				"tests/specs/integration/SearchPageSpec.cfc"
+			],
+			[
+				"tests/appl",
+				"tests/Application.cfc"
+			],
+			[
+				"trackinglogs/sear",
+				"views/trackingLogs/search.cfm"
+			],
+			[
+				"trackinglogs/index",
+				"views/trackingLogs/index.cfm"
+			],
+			[
+				"trackinglog",
+				"models/TrackingLog.cfc"
+			],
+			[
+				"user",
+				"models/User.cfc"
+			],
+			[
+				"application",
+				"tests/Application.cfc"
+			],
+			[
+				"test.cfc",
+				"testbox/tests/resources/Test.cfc"
+			],
+			[
+				"rou",
+				"config/Routes.cfm"
+			],
+			[
+				"search",
+				"handlers/search.cfc"
+			],
+			[
+				"appl",
+				"Application.cfc"
+			],
+			[
+				"application.cf",
+				"Application.cfc"
+			],
+			[
+				"areaservice",
+				"models/Areas/AreaService.cfc"
+			],
+			[
+				"trackingda",
+				"models/TrackingLogs/TrackingDao.cfc"
+			],
+			[
+				"trackingserv",
+				"models/TrackingLogs/TrackingService.cfc"
+			],
+			[
+				"route",
+				"config/Routes.cfm"
+			],
+			[
+				"trackingdao",
+				"models/TrackingLogs/TrackingDao.cfc"
+			],
+			[
+				"layouts/main",
+				"layouts/Main.cfm"
+			],
+			[
+				"sublime",
+				"scs-track.sublime-project"
+			],
+			[
+				"track",
+				"views/packages/track.cfm"
+			],
+			[
+				"packages",
+				"tests/specs/integration/PackagesTest.cfc"
+			],
+			[
+				"work",
+				"views/reports/workorders.cfm"
+			],
+			[
+				"docke",
+				"Dockerfile"
+			],
+			[
+				"book",
+				"views/reports/bookedlabor-team.cfm"
+			],
+			[
+				"booked",
+				"views/reports/bookedlabor-team.cfm"
+			],
+			[
+				"booklab",
+				"views/reports/bookedlabor-tech.cfm"
+			],
+			[
+				"custominfo",
+				"models/CustomInforDAO.cfc"
+			],
+			[
+				"edit",
+				"quality/edit-issue.cfm"
+			],
+			[
+				"_view-issue",
+				"quality/views/issues/_view-issue.cfm"
+			],
+			[
+				"view-issue",
+				"quality/view-issue.cfm"
+			],
+			[
+				"quality",
+				"quality/app/Quality/Quality.cfc"
+			],
+			[
+				"_issue-row-template.cfm",
+				"quality/views/audits/product-audits/_issue-row-template.cfm"
+			],
+			[
+				"_audit-row-template.cfm",
+				"quality/views/audits/product-audits/_audit-row-template.cfm"
+			],
+			[
+				"_issue-row-template.handlebars",
+				"quality/views/audits/product-audits/_issue-row-template.handlebars"
+			],
+			[
+				"_edit-product-audit-form.cfm",
+				"quality/views/audits/product-audits/_edit-product-audit-form.cfm"
+			],
+			[
+				"_edit-issue-form.cfm",
+				"quality/views/issues/_edit-issue-form.cfm"
+			],
+			[
+				"issue",
+				"quality/issue.cfm"
+			],
+			[
+				"box",
+				"quality/box.json"
+			],
+			[
+				"flas",
+				"quality/views/layouts/partials/_flash-messages.cfm"
+			],
+			[
+				"produc",
+				"quality/edit-product-audit.cfm"
+			],
+			[
+				"log.cfc",
+				"quality/app/Log/Log.cfc"
+			],
+			[
+				"daily",
+				"quality/daily-numbers.cfm"
+			],
+			[
+				"transa",
+				"quality/transactions-log.cfm"
+			],
+			[
+				"daily-numbers-for",
+				"quality/views/daily-numbers/daily-numbers-form.cfm"
+			],
+			[
+				"daily-num",
+				"quality/views/daily-numbers/daily-numbers-view.cfm"
+			],
+			[
+				"dailynumber",
+				"quality/daily-numbers.cfm"
+			],
+			[
+				"update-qed-records.cfm",
+				"update-qed-records.cfm"
+			],
+			[
+				"overnight",
+				"cf/overnight/overnight-qed.cfm"
+			],
+			[
+				"throughputser",
+				"app/Throughput/ThroughputService.cfc"
+			],
+			[
+				"delivery",
+				"delivery-report.cfm"
+			],
+			[
+				"viewqed",
+				"view-qed-report.cfm"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1005.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/scs-docker-host/scs-wms/scs-wms.sublime-project"
+			]
+		],
+		"width": 960.0
+	},
+	"select_symbol":
+	{
+		"height": 47.0,
+		"last_filter": "populate mode",
+		"selected_items":
+		[
+			[
+				"populate mode",
+				"populateModel"
+			]
+		],
+		"width": 719.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

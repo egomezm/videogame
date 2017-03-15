@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5, CSS3 and JavaScript demo</title>
+	<style>
+		canvas#viewport { border: 1px solid black;  }
+	</style>
+	<script src="js/2d-game-engine.js"></script>
+	<script src="js/worlds.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/controlls.js"></script>
+</head>
+
+<body>
+
+
+<canvas id="viewport" width="800px" height="600px"></canvas>
+  
+
+<script>
+// Load images
+var character = new Image();
+var mario = loadImage('images/mario-stands-forward.png');
+var brick = loadImage('images/brick-brown.png');
+var grassImg = loadImage('images/grass-floor.png');
+
+
+//var mario = loadImage('images/mario-swimimg.gif');
+// var brick = loadImage('images/brick-brown.png');
+
+var canvas = document.getElementById('viewport');  //Referes to the HTML canvas
+stage = canvas.getContext('2d');	//Establish a 2D context enviroment
+//stage.fillText('Mario',50,50);
+//stage.clearRect( 0, 0, stage.width, stage.height ); 	//Clear the stage
+//stage.fillStyle = "rgba(0,200, 0, 1)";
+//stage.fillRect (x, 20, 50, 50);
+stage.save();	//Save the canvas state if required
+
+var player = new Player();
+player.position_x = 64;
+player.position_y = 420;
+//console.log(player);
+
+var mario_x = 64;
+var mario_y = 420;
+
+// As soon as everything is loaded and ready
+window.onload = function(){
+
+	//render();
+	var grass = new Sprite('images/grass-floor.png',true);
+	var mario = new Sprite('images/mario-stands-forward.png',false);
+	var man = new Sprite('images/ManSpriteSheet50x50each.png',false);
+
+
+
+	//Animation
+	var angle=0;
+	setInterval(function(){
+
+	// if(keyboardStatusAtFrame['right']){ player.position_x += 3; }
+	// if(keyboardStatusAtFrame['up']){ player.position_y += -3; }
+	// if(keyboardStatusAtFrame['left']){ player.position_x += -3; }
+	// if(keyboardStatusAtFrame['down']){ player.position_y += 3; }
+
+	if(keyboardStatusAtFrame['right']){ mario_x += 5; }
+	if(keyboardStatusAtFrame['up']){ mario_y += -5; }
+	if(keyboardStatusAtFrame['left']){ mario_x += -5; }
+	if(keyboardStatusAtFrame['down']){ mario_y += 5; }
+	//console.log('(' + mario_x + ', ' + mario_y +')');
+
+		stage.fillStyle = '#0000FF';
+		stage.fillRect(0,0,canvas.width, canvas.height);
+
+		grass.draw(0,480,800,32);
+		grass.draw(0,32,32,32);
+
+		man.drawAnimated(200,200,[1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,],50);
+
+
+		mario.draw(mario_x,mario_y,32,32 );
+		grass.rotate(115,160, angle += 4);
+
+	}, 24);
+	//mario.width = 32;
+//console.log(mario);
+}
+
+
+// Functions
+
+
+//Objects
+
+
+
+function render(){
+	createBackground();
+	// do while game is running
+	renderCharacter();
+
+
+};
+
+
+function renderCharacter(){
+	character = mario;
+	stage.drawImage(character,1,1);
+}
+
+
+
+
+
+function createBackground(){
+	var pat=stage.createPattern(brick,"repeat");
+	stage.rect(0,0,canvas.width, canvas.height);
+	stage.fillStyle=pat;
+	stage.fill();
+}
+</script>
+
+</body>
+</html>
