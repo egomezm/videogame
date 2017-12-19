@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"conslo",
+				"console.log"
+			],
+			[
+				"is",
+				"isIntelligent〔variable〕"
+			],
+			[
+				"tru",
+				"true,false"
+			],
+			[
+				"rig",
+				"rigthSide"
+			],
+			[
+				"left",
+				"leftSide"
+			],
+			[
+				"game",
+				"game.screen.width"
+			],
+			[
+				"red",
+				"redPaddle.x"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"ball",
+				"ball.isColliding"
+			],
+			[
 				"convert",
 				"convertValueToJavaType"
 			],
@@ -107,6 +143,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/2d-game-engine.js",
+			"settings":
+			{
+				"buffer_size": 17956,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ping-pong.js",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -176,12 +229,17 @@
 	},
 	"expanded_folders":
 	[
-		"/Applications/ColdFusion11/cfusion/wwwroot/videogame"
+		"/Applications/ColdFusion11/cfusion/wwwroot/videogame",
+		"/Applications/ColdFusion11/cfusion/wwwroot/videogame/js"
 	],
 	"file_history":
 	[
-		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/table.cfm",
+		"/Applications/ColdFusion11/cfusion/wwwroot/videogame/email.html",
+		"/Applications/ColdFusion11/cfusion/wwwroot/videogame/js/ping-pong.js",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-lucee-base/supervisord.conf",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-lucee-base/Dockerfile",
 		"/Users/eduardo.gomez/.bash_profile",
+		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/views/trackingLogs/table.cfm",
 		"/Users/eduardo.gomez/Desktop/class-videogame/js/2d-game-engine.js",
 		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/.env",
 		"/Users/eduardo.gomez/Documents/scs-docker-host/scs-track/Dockerfile",
@@ -303,12 +361,11 @@
 		"/Users/eduardo.gomez/Documents/Sublime Projects/sc-QUALITY.sublime-project",
 		"/Users/eduardo.gomez/Remotes/sc-quality/view-qed-report.cfm",
 		"/Users/eduardo.gomez/Remotes/sc-quality/delivery-report.cfm",
-		"/Users/eduardo.gomez/Remotes/sc-quality/app/Throughput/ThroughputService.cfc",
-		"/Users/eduardo.gomez/Remotes/sc-quality/cf/overnight/overnight-qed.cfm"
+		"/Users/eduardo.gomez/Remotes/sc-quality/app/Throughput/ThroughputService.cfc"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -327,6 +384,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ball.",
+			"red",
+			"createPattern",
+			"resistance",
+			"this.isPattern",
+			",",
+			"true",
+			"console",
+			"t",
+			"bottomSide",
+			"temp",
+			"bounce",
+			"= ",
+			" = stage.rect",
+			".pattern",
+			"pattern",
+			"Pattern",
+			"pattern",
+			"moving",
+			"ball",
+			"anObject",
+			"console.log",
+			"=",
+			":",
 			"track",
 			" ",
 			"                                        ",
@@ -430,31 +511,7 @@
 			"hemp",
 			"t_host_employees",
 			"usp_import_host_employees",
-			"parList",
-			"part_number",
-			"partNumber",
-			"part_number",
-			"title",
-			"Search",
-			"invoice",
-			"Utility",
-			"h3",
-			"h2",
-			"th",
-			"po_barcodes",
-			"multiselect",
-			"muyltise",
-			"\n\t/**\n    * index  \n    */\n    function index( event, rc, prc ){\n\t\tevent.setView( \"KanbanCards/index\" );\n\t}\t",
-			"reportform",
-			"e.evt_code",
-			"setDatasource( 'INFOR' )",
-			"setDatasource",
-			"e.evt_code",
-			"evt_code",
-			"e.evt_code",
-			"CORE",
-			"core",
-			"getTemplate"
+			"parList"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -472,8 +529,68 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/2d-game-engine.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11420,
+								11420
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/ping-pong.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -808,7 +925,7 @@
 		[
 			[
 				"",
-				"~/Documents/scs-docker-host/scs-wms/scs-wms.sublime-project"
+				"~/Documents/sc-oracle/oracle.sublime-project"
 			]
 		],
 		"width": 960.0
