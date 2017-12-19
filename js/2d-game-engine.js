@@ -34,6 +34,22 @@ var Game = function(){
 		this.levels = [];
 		this.settings = {};
 		this.controls = new Controls();
+		this.screen = {
+			x: 0,
+			y: 0,
+			width: 0,
+			height: 0,
+			topSide:null,
+			bottomSide:null,
+			leftSide:null,
+			rightSide:null
+		}
+		// this.screen.topSide = new Sprite(fileName="images/ball.png", isPattern=true);
+		// this.screen.bottomSide = new Sprite(fileName="images/ball.png", isPattern=true);
+		// this.screen.leftSide = new Sprite(fileName="images/ball.png", isPattern=true);
+		// this.screen.rightSide = new Sprite(fileName="images/ball.png", isPattern=true);
+
+
 		
 		var cpu = new Player;
 		var player1 = new Player;
@@ -175,42 +191,67 @@ var Player = function(name="player", x=0, y=0, width=0, height=0){
 
 var Sprite = function( fileName, isPattern ){
 		this.image = null;
-		this.pattern = null;
 		this.width = null;
 		this.height = null;
 		this.x = null;
 		this.y = null;
-		this.animationDelay = 0;
-		this.animationIndexCounter = 0;
-		this.animationCurrentFrame = 0;
 
+		this.pattern = null;  //change to var instead of this.
+		this.isIntelligent = null;
+		this.velocity = null;
+		this.acceleration = null;
+		this.directionX = 1;
+		this.directionY = 1;
+		this.resistance = null;
+
+		this.animationDelay = 0; //change to var instead of this.
+		this.animationIndexCounter = 0; //change to var instead of this.
+		this.animationCurrentFrame = 0; //change to var instead of this.
+
+		//If an Image is loaded
 		if(fileName != undefined && fileName != "" && fileName!= null){
 			this.image = new Image();
 			this.image.src = fileName;
 			this.width = this.image.width;
 			this.height = this.image.height;
 
-			if( isPattern ){
-				this.pattern = stage.createPattern( this.image,"repeat" );
+			if( isPattern ){				
+				this.pattern = stage.createPattern( this.image, 'repeat' );
+// this.pattern = new Array();
 			}
 		}
+		//If No Image is loaded
 		else{
-			console.log('Unable to load the sprite' + fileName);
+			//this.image = new Image();
+			// this.image.src = fileName;
+			// this.width = 32;
+			// this.height = 32;
+			console.log('Unable to load image ' + fileName + " to Sprite!");
 		}
+// console.log(this.pattern);
+
 
 		this.draw = function(x,y,w,h){
-			//Pattern
+			//If a Pattern is defined
+			// console.log(this.pattern);
 			if(this.pattern != null){
+			// console.log("pattern defined");
+				stage.rect(x,y,w,h)
 				stage.fillStyle = this.pattern;
-				stage.fillRect(x,y,w,h);
+				stage.fill();
+
 			}
+			//If NO pattern is defined
 			else{
-				//Image
+			// console.log("NO pattern defined");
+				//use Image width and height
 				if(w != undefined || h != undefined){
 					stage.drawImage(this.image, x, y, this.image.width, this.image.height);
+				// console.log("width and Height defined");
 				}
+				//strech Image to values passed.
 				else{
-					//Stretch
+				// console.log("NO width and Height defined");
 					stage.drawImage(this.image, x, y, w, h);
 				}
 			}
@@ -262,6 +303,25 @@ var Sprite = function( fileName, isPattern ){
 	        }
 	        return crash;
 	    };
+
+	    this.move = function(isMovingOnX=true,isMovingOnY=true){
+	    	if(isMovingOnX){
+				this.x = this.x + (this.velocity * this.directionX);
+	    	// console.log( this.x);
+	    	}
+	    	if(isMovingOnY){
+				this.y = this.y + (this.velocity * this.directionY);
+	    	}
+	    }
+
+	    this.bounce = function(isBouncingOnX,isBouncingOnY){
+	    	if(isBouncingOnX){
+	    		this.directionX = ( this.directionX * -1 );
+	    	}
+	    	if(isBouncingOnY){
+	    		this.directionY = ( this.directionY * -1 );	
+	    	}
+	    }
 };
 
 
@@ -280,41 +340,46 @@ function startGame(){
 
 function createStage(){
 	window.canvas = document.getElementById('viewport');  //Referes to the HTML canvas
-		// canvas.width = canvas.getAttribute('width');
-		// canvas.height = canvas.getAttribute('heigth');
-		// canvas.x = 0;
-		// canavs.y = 0;
-		//console.log(canvas.x);
 	window.stage = canvas.getContext('2d');	//Refers to 2d stage in Canvas
 	stage.save();	//Save the canvas state if required
 }
 
 function createNewGame(){
 	window.game = new Game;	//Create game Global Variable
+	w = parseInt(canvas.getAttribute('width'),10);
+	h = parseInt(canvas.getAttribute('height'),10);
+	x = 0;
+	y = 0;
+	thick = 32;
+	game.screen.width = w;
+	game.screen.height = h;
+	game.screen.x = x;
+	game.screen.y = y;
+	game.screen.sidesThicknes = thick;
+
+	// game.screen.topSide = new Sprite();
+	// game.screen.bottomSide = new Sprite();
+	// game.screen.rigthSide = new Sprite();
+	// game.screen.leftSide = new Sprite();
+
+	// game.screen.topSide.draw(x, y, w, thick);
+	// game.screen.bottomSide.draw(x, h-thick, w, thick);
+	// game.screen.rigthSide.draw(w-thick, y, thick, h);
+	// game.screen.leftSide.draw(x, y, thick, h);
+	//stage.stroke();
 }
 
 function preloadResources(arrayOfImagesPaths){
-	// window.Images = [];
-	// for (i = 0; i < videoGame.images.length; i++) {
-	// 	eval("var " + videoGame.images[i].name + "= loadImage('" + videoGame.images[i].path + "')");
-	// 	// var temp = new Image;
-	// 	// temp.name = videoGame.images[i].name;
-	// 	// temp.src = videoGame.images[i].path;
-	// 	// temp.alt = videoGame.images[i].name;
-	// 	Images.push( eval( videoGame.images[i].name ) );
-	// }
-
 }
 
 function assignResourcesToGame(){
-	// game.players[1].name = "bleh";
-	//console.log(game);
 }
 
 function startRenderEngine(){
 	window.onload = function(){
 		// Static Elements
-console.log("bleh");
+
+
 
 		// START custom logic for each Video Game here
 		var net = new Sprite(fileName="images/net.png", isPattern=true);
@@ -322,28 +387,78 @@ console.log("bleh");
 		var bluePaddle = new Sprite(fileName="images/paddle-blue.png", isPattern=false);
 		var ball = new Sprite(fileName="images/ball.png", isPattern=false);
 
-		ball.x =0;
-		ball.y =0;
+		ball.width =32;
+		ball.height =32;
+		// redPaddle.x = 100;
+		// redPaddle.y = 100;
+		// bluePaddle.x = 400;
+		// bluePaddle.y = 400;
 
 
 		// Dynamic Elelments
 		setInterval( function(){
 			//---------------------------
+			
+			
 			renderBackground();
 
-			net.draw(400,32,32,32);	//RenderMap(level1, Images, 32);
-			redPaddle.draw(100,100, 64,192);
-			bluePaddle.draw(736,100, 64,192);
+			// net.draw(400,0,32,600);	
+			// redPaddle.draw(redPaddle.x,redPaddle.x, 64,192);
+			// bluePaddle.draw(736,100, 64,192);
 			ball.draw(ball.x,ball.y,32,32);
 
-			ball.x = ball.x +5;
-			ball.y = ball.y +5;
+			ball.velocity = 5;
+			ball.isIntelligent = false;
+			ball.move();
 
-			// 	if(ball.isColliding(redPaddle)){ 
-			// ball.x = ball.x -5;
-			// ball.y = ball.y -5;
-			// 	}
-			//game.currentFrame ++;
+//console.log(ball);
+//bottom
+if (ball.y > (game.screen.height - ball.height  ) ){
+	ball.bounce(false, true);
+}
+//top
+if (ball.y <  game.screen.y ){
+	ball.bounce(false, true);
+}
+//right
+if (ball.x >  (game.screen.width - ball.width) ){
+	ball.bounce(true, false);
+}
+//Left 
+if (ball.x <  game.screen.x ){
+	ball.bounce(true, false);
+}
+
+console.log( ball.height);
+			// if( ball.isCollidingWith( redPaddle ) ){
+			// 	ball.bounce(true,false);
+			// }
+
+			// if( ball.isCollidingWith( game.screen.topSide ) ){
+			// 	ball.bounce(false,true);
+			// }
+			// if( ball.isCollidingWith( game.screen.bottomSide ) ){
+			// 	ball.bounce(false,true);
+			// }
+			// console.log(game.screen.bottomSide);
+			// if( ball.isCollidingWith( game.screen.leftSide ) ){
+			// 	ball.bounce(true,false);
+			// }
+			// if( ball.isCollidingWith( game.screen.rigthSide ) ){
+			// 	ball.bounce(true,false);
+			// }
+
+			// function bounce(){
+			// 	return -1;
+			// }
+
+			// function move( anObject ){
+			// 	anObject.x = anObject.x + (anObject.velocity * anObject.directionX);
+			// 	anObject.y = anObject.y + (anObject.velocity * anObject.directionY);
+			// }
+
+
+			game.currentFrame ++;
 			//console.log(game.currentFrame);
 
 			//---------------------------
@@ -366,6 +481,9 @@ function renderBackground(){
 	stage.fillRect( 0, 0, canvas.width, canvas.height );
 }
 
+function updateScreen(){
+
+}
 
 function updateScoreBoard(){
 	addText( game.currentPlayer + ": " + Math.floor(game.currentFrame/game.framesPerSecond), 10, 40, 30, "Comic Sans MS");
@@ -390,7 +508,7 @@ function isColliding(object1, object2){
 	— meaning no rotation. The algorithm works by ensuring there is no gap between any of the 4 sides
 	 of the rectangles. Any gap means a collision does not exist.
 	*/
-	var temp = false;
+	var isColliding = false;
 	// var object1 = {x: 5, y: 5, width: 50, height: 50}
 	// var object2 = {x: 20, y: 10, width: 10, height: 10}
 	if (object1.x < object2.x + object2.width &&
@@ -398,11 +516,11 @@ function isColliding(object1, object2){
 	   object1.y < object2.y + object2.height &&
 	   object1.height + object1.y > object2.y) {
 	    // collision detected!
-		temp = true;
+		isColliding = true;
 	}else{
-		temp = false;
+		isColliding = false;
 	}
-	return temp;
+	return isColliding;
 }
 
 var RenderMap = function(arrMap, Images, tileSize){
